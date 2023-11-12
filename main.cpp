@@ -109,5 +109,25 @@ void Pythagoras()
 
 void Fibonacci()
 {
+    
+    int a = 0  ; int b = 1 ; int c = 1;
+    int i , n;
+    cout << "Nhap so luong so Fibonacci: " ; cin >> n ;
+    for(i = 0; i < n ;i ++)
+    {
+        if(i == 0 || i == 1)
+        {
+            cout << i << " ";
+        }        
+        else
+        {           
+            cout << c << " ";
+            a = b;
+            b = c;
+            c = a + b;
+        }
+    }
+
+    
 
 }
